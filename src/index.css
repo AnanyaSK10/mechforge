@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Geist:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-geist: "Geist", sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #980003;
+}
+
+/* Reveal Transitions */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover Cards */
+.hover-card {
+  transition: all 0.3s ease;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px -10px rgba(152, 0, 3, 0.15);
+  border-color: rgba(152, 0, 3, 0.3);
+}

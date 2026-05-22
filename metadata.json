@@ -1,0 +1,6 @@
+{
+  "name": "MechForge",
+  "description": "An agentic AI tutor that diagnoses structural miscalculations in real-time, bridging the gap between university syllabus compliance and competitive national engineering examinations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
